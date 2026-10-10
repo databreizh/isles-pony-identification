@@ -1,0 +1,37 @@
+PONY CORPUS AUDIT
+
+pony_folders: 122
+images_found: 1549
+readable_images: 1549
+unreadable_images: 0
+unique_pixel_contents: 1549
+min_photos: 5
+median_photos: 12.0
+max_photos: 22
+mean_photos: 12.69672131147541
+folders_by_category: {'au_moins_10_photos': 115, 'moins_de_10_photos': 7}
+duplicate_file_groups: 0
+duplicate_pixel_groups: 0
+candidate_similar_pairs: 3
+cross_identity_similar_pairs: 0
+
+Names present in multiple folders: 0
+Folder anomalies: 0
+
+LIMITATIONS
+pHash groups are candidates for visual similarity, not verified photographic sessions.
+Distinct photographs may be grouped together; bursts, crops, or photographs from the same session may be missed.
+A connected group may contain images whose pairwise distance exceeds the threshold (chaining).
+EXIF dates are not validated; file modification dates are not used as capture dates.
+An image containing multiple ponies retains the folder identity, without automatic verification of the subject.
+The number of groups is not a measure of the number of independent photographic sessions.
+Identical names in multiple folders must be resolved before creating splits.
+For multi-frame GIF/TIFF files, only the first image is audited; the number of frames is reported.
+
+No images were modified. No evaluation splits were created.
+Use corpus_audit.json and image_inventory.csv to prepare the experiments.
+
+PATH CONVENTIONS
+Absolute computer paths have been replaced with corpus-relative paths using forward slashes.
+The relative_path column retains its original meaning: a path relative to the category folder.
+Original category folder names, pony names, and image filenames are preserved.
